@@ -8,7 +8,7 @@ export class PayoutController {
 
     constructor() {
         this.BonusRoles = [process.env.ROOKIE_ID!, process.env.JUNIOR_ID!, process.env.WORKER_ID!, process.env.SENIOR_ID!, process.env.EXPERIENCED_ID!, process.env.PROFESSIONAL_ID!, process.env.MANAGER_ID!, process.env.MANAGEMENT_ID!, process.env.CEO_ID!];
-        this.BonusPercentage = [0.4, 0.5, 0.525, 0.55, 0.6, 0.625, 0.65, 0.65, 0.65, 0.7];
+        this.BonusPercentage = [0.4, 0.45, 0.50, 0.535, 0.585, 0.625, 0.67, 0.70, 0.75];
     }
 
     public async calculateBonus(user_id: string, passedNumber: number, toReturn: string) {
